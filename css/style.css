@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-    --dark-bg-color: #1f2397;
+    --dark-bg-color: #1F2937;
     --white: #f9faf8;
-    --secondary-white: hsl(220, 13%, 91%);
+    --secondary-white: #e5e7eb;
     --btn-color: #3882f6;
 }
 
@@ -30,12 +30,24 @@ img {
     height: 100%;
 }
 
-h1 {
+h1, h2 {
     margin: 10px 0;
 }
 
 p {
     margin: 10px 0;
+}
+
+h3 {
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--dark-bg-color);
+}
+
+h4 {
+    color: var(--dark-bg-color);
+    font-size: 18px;
 }
 
 /* -- Utilities -- */
@@ -59,6 +71,13 @@ p {
     padding: 10px 30px;
     margin: 10px 0;
     border-radius: 5px;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 5px 30px;
+    border: 3px solid white;
+    border-radius: 10px;
 }
 
 /* -- Navbar -- */
@@ -86,7 +105,7 @@ p {
 
 /* -- Hero Section -- */
 .hero {
-    height: 400px;
+    height: 500px;
     background-color: var(--dark-bg-color);
     color: var(--white);
 }
@@ -96,8 +115,117 @@ p {
 }
 
 .hero-left {
-    padding-right: 200px;
+    padding-right: 100px;
 }
+
+.hero h1 {
+    font-size: 48px;
+    color: var(--white);
+}
+
+.hero p {
+    font-size: 18px;
+    color: var(--secondary-white);
+}
+
+/* -- Information Section -- */
+.info {
+    height: 500px;
+    background-color: #fff;
+    margin: auto 80px;
+}
+
+.info h2 {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 200px;
+}
+
+.info-box {
+    height: 150px;
+    width: 150px;
+    border: 3px solid var(--btn-color);
+    border-radius: 10px;
+}
+
+.info-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* -- Testimonials -- */
+.testimonials {
+    height: 400px;
+    background-color: var(--secondary-white);
+    padding: 0 100px;
+}
+
+.testimonial-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-item h3 {
+    margin: 20px auto;
+}
+
+.testimonial-item h4 {
+    align-self: flex-end;
+}
+
+/* -- Call to Action -- */
+.cta {
+    height: 400px;
+}
+
+.cta-box {
+    background-color: var(--btn-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+}
+
+.cta h4 {
+    color: white;
+    margin-bottom: -10px;
+}
+
+/* -- Footer -- */
+.footer {
+    height: 100px;
+    background-color: var(--dark-bg-color);
+    color: white;
+    text-align: center;
+}
+
+.footer .flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.footer p {
+    margin: -2px 0;
+}
+
+
+
+
+
+
 
 
 
